@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
