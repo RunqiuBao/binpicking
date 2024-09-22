@@ -21,3 +21,11 @@ button {
     font-size: 16px;
 }
 
+/* Centering Block-Level Elements Horizontally */
+.center-block {
+    width: 50%; /* Set a width */
+    margin: 0 auto; /* Center the block horizontally */
+    background-color: lightgray;
+    padding: 20px;
+    text-align: left; /* Keep text inside left-aligned */
+}

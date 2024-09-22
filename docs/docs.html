@@ -2,20 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Docs - My GitHub Website</title>
+    <title>Markdown in HTML Example</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="render_markdown.js" defer></script> <!-- 'defer' ensures JS runs after HTML is loaded -->
 </head>
 <body>
-    <h1>Documentation</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="introduction.html">Introduction</a></li>
-        </ul>
-    </nav>
-    <p>This page contains documentation.</p>
-    <button onclick="showDocs()">View Docs</button>
+	<div class="center-block">
+	    <h1>Arm robot binpicking repo docs</h1>
+	    <nav>
+	        <ul>
+	            <li><a href="index.html">Home</a></li>
+	            <li><a href="introduction.html">Introduction</a></li>
+	        </ul>
+	    </nav>
+	
+	    <!-- Container where the parsed markdown content will appear -->
+	    <div id="markdown-content"></div>
+	
+	    <!-- Write your markdown inside a script tag of type "text/markdown" -->
+	    <script type="text/markdown" id="markdown">
+# System overview
+The system includes these hardwares:
 
-    <script src="script.js"></script>
+## components
+  - A UR 3e robot.
+  - A two-finger gripper.
+  - A stereo event camera.
+
+[Visit GitHub](https://github.com)
+	    </script>
+	</div>
 </body>
 </html>
